@@ -7,6 +7,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('index', {path: '/'})
+  this.route('staff');
+  this.route('worship');
+  this.route('ministries');
+  this.route('links');
+  this.route('photos');
+  this.route('calendar');
+  this.route('faq');
 });
 
 export default Router;

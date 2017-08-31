@@ -1,5 +1,40 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+
+<header>
+  <nav class="navbar navbar-default">
+    <div>
+      <h1>Woodlane Community Church</h1>
+      <h3>Bringing the Presence of Jesus Christ Into the Community</h3>
+    </div>
+    <div>
+      {{#link-to "index"}}<button type="button" name="button" class="btn btn-default">Home</button>{{/link-to}}
+      {{#link-to "staff"}}<button type="button" name="button" class="btn btn-default">Staff/Team</button>{{/link-to}}
+      {{#link-to "worship"}}<button type="button" name="button" class="btn btn-default">Worship</button>{{/link-to}}
+      {{#link-to "ministries"}}<button type="button" name="button" class="btn btn-default">Ministries</button>{{/link-to}}
+      {{#link-to "links"}}<button type="button" name="button" class="btn btn-default">Links</button>{{/link-to}}
+      {{#link-to "photos"}}<button type="button" name="button" class="btn btn-default">Photos</button>{{/link-to}}
+      {{#link-to "calendar"}}<button type="button" name="button" class="btn btn-default">Calendar</button>{{/link-to}}
+    </div>
+  </nav>
+
+</header>
+
+<main>
 
 {{outlet}}
+
+</main>
+
+<footer>
+  <nav class="footer container">
+    <span>
+      5694 Woodlane Newark NY 14513
+    </span>
+    <span>
+      Phone: (315) 331-4903
+    </span>
+    <span>
+      E-mail: <a href="mailto:office@woodlanechurch.org">office@woodlanechurch.org</a>
+    </span>
+  </nav>
+
+</footer>

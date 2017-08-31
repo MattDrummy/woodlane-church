@@ -1,0 +1,83 @@
+body {
+  --panel-color: rgb(240, 240, 240);
+}
+
+main {
+  padding: 40px 0;
+}
+
+.worship-header h3,
+.index-section h3,
+.staff-main h3,
+.staff-main h4,
+.worship-section h3,
+.ministries-section h3 {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 10px;
+  background-color: var(--panel-color);
+}
+
+.footer span {
+  margin: 0px 20px;
+  font-size: 1.3em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: var(--panel-color);
+}
+
+.navbar button {
+  margin: 5px;
+}
+
+.index-header {
+  text-align: center;
+  background-color: var(--panel-color);
+}
+
+.index-section {
+  padding: 20px;
+}
+
+.believe-header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.address-info {
+  text-align: center;
+}
+
+.map {
+  padding: 2px;
+  text-align: center;
+}
+
+.links-section {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.links-main .container .links-section:first-child {
+  border-right: 1px solid grey;
+}
+
+.links-main .container:first-child {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.links-main .container:last-child {
+  border-bottom: 1px solid grey;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+}
