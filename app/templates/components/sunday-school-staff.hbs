@@ -1,8 +1,6 @@
 <h3>Sunday School</h3>
 <ul>
-  <li><b>Superintendent - </b>Cindy Timerson</li>
-  <li><b>Age 3 to Grade 2 - </b>Laurie Johnson</li>
-  <li><b>Grade 3 to Grade 6 - </b>Dawn Goodman</li>
-  <li><b>Grade 7 to Grade 12 - </b>Todd and Andrea Windus</li>
-  <li><b>Adult - </b>Dave Borland and Marie Hadden</li>
+  {{#each sundayschoolstaff as |member|}}
+  <li><strong>{{member.role}} - </strong>{{member.name}}</li>
+  {{/each}}
 </ul>

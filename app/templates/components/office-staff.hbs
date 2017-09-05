@@ -1,5 +1,6 @@
 <h3>Office Staff</h3>
 <ul>
-  <li><b>Pastor - </b>Rev. Brian Maag</li>
-  <li><b>Secretary - </b>Deb Smith</li>
+  {{#each officestaff as |member| }}
+  <li><strong>{{member.role}} - </strong>{{member.name}}</li>
+  {{/each}}
 </ul>

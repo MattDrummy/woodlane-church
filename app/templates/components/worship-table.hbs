@@ -1,3 +1,8 @@
-<td></td>
-<td></td>
-<td></td>
+
+  <td>{{entry.date}}</td>
+  <td><a href={{entry.[sermon_link]}}>{{entry.title}}</a></td>
+  {{#if entry.scripture_link}}
+  <td><a href={{entry.[scripture_link]}}>{{entry.scripture}}</a></td>
+  {{else}}
+  <td><span>{{entry.scripture}}</span></td>
+  {{/if}}

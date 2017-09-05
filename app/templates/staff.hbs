@@ -1,12 +1,12 @@
 <section class="staff-main container">
 
   <div class="staff-block">
-    {{office-staff model=model}}
+    {{office-staff officestaff=model.officestaff}}
 
   </div>
 
   <div class="staff-block">
-    {{sunday-school-staff}}
+    {{sunday-school-staff sundayschoolstaff=model.sundayschoolstaff}}
 
   </div>
 
@@ -15,18 +15,16 @@
     {{consistory-list}}
     <h4>Elders</h4>
     <ul>
-      <li>Marie Hadden</li>
-      <li>Dawn Goodman</li>
-      <li>Candy Matthews</li>
-      <li>Bob Briggs</li>
+      {{#each model.elder as |member|}}
+      <li>{{member.name}}</li>
+      {{/each}}
     </ul>
     {{consistory-list}}
     <h4>Deacons</h4>
     <ul>
-      <li>Dave Borland</li>
-      <li>Bruce Hadden</li>
-      <li>Todd Windus</li>
-      <li>Marge Bixby</li>
+      {{#each model.deacon as |member|}}
+      <li>{{member.name}}</li>
+      {{/each}}
     </ul>
   </div>
 </section>

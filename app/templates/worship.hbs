@@ -9,14 +9,18 @@
     <h3>Seeking God</h3>
     <img src="" alt="">
     <table class="table">
-      <tr>
-        <th>Date</th>
-        <th>Sermon link</th>
-        <th>Verses</th>
-      </tr>
-      {{#each}}
-        {{worship-table}}
-      {{/each}}
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Sermon link</th>
+          <th>Verses</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each model.worshipschedule as |entry|}}
+        {{worship-table entry=entry}}
+        {{/each}}
+      </tbody>
     </table>
   </div>
 </section>
