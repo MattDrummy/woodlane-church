@@ -1,11 +1,6 @@
 <h3>Church Ministries</h3>
 <ul>
-  <li>Sunday School</li>
-  <li>Esther Circle</li>
-  <li>Choir</li>
-  <li>Fleece Blanket</li>
-  <li>Prayer Partners</li>
-  <li>Wheels of Faith</li>
-  <li>Library</li>
-  <li>Memorial Garden</li>
+  {{#each model.ministry as |entry|}}
+  <li>{{entry.name}}</li>
+  {{/each}}
 </ul>

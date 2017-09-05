@@ -1,1 +1,6 @@
-{{yield}}
+<h3>Woodlane Community Church also supports these community outreaches</h3>
+<ul>
+  {{#each model.communityoutreach as |entry|}}
+  <li>{{entry.name}}</li>
+  {{/each}}
+</ul>

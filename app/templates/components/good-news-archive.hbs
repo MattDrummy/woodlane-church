@@ -1,4 +1,6 @@
 <h3>Good News Archive</h3>
-<p><a href="#">link</a></p>
+{{#each model.goodnewsarchive as |entry|}}
+<p><a href={{entry.link}}>{{entry.title}}</a></p>
+{{/each}}
 <h3>Resources</h3>
 <p><a href="#">link</a> - description</p>
