@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
-  host: 'http://localhost:3000',
+  host: 'https://powerful-journey-69992.herokuapp.com',
   namespace: 'api'
 });
