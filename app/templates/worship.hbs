@@ -18,7 +18,9 @@
       </thead>
       <tbody>
         {{#each model.worshipschedule as |entry|}}
-        {{worship-table entry=entry}}
+          <tr>
+            {{worship-table entry=entry}}
+          </tr>
         {{/each}}
       </tbody>
     </table>

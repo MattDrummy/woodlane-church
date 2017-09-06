@@ -8,7 +8,9 @@ export default Ember.Route.extend({
       pastsermonarchive: this.get('store').findAll('pastsermonarchive'),
       memoryverse: this.get('store').findAll('memoryverse'),
       weeklyscripture: this.get('store').findAll('weeklyscripture'),
-      resource: this.get('store').findAll('resource')
+      resource: this.get('store').findAll('resource'),
+      currentsermon: this.get('store').findAll('currentsermon'),
+      sermonparagraph: this.get('store').findAll('sermonparagraph')
     })
   }
 });

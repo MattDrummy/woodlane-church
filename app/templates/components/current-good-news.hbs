@@ -1,3 +1,8 @@
-<h3>Good News - Date</h3>
-<h4>Title</h4>
-<p>Short Lesson or Sermon?</p>
+{{#each model.currentsermon as |entry|}}
+<h3>Good News - {{entry.date}}</h3>
+<h4>{{entry.title}}</h4>
+{{/each}}
+
+{{#each model.sermonparagraph as |paragraph|}}
+<p style="text-indent: 50px;">{{paragraph.paragraph}}</p>
+{{/each}}

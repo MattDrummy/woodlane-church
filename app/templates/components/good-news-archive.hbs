@@ -9,11 +9,11 @@
 <h3>Resources</h3>
 
 <ul>
-  {{#each model.resource as |entry|}}
-    {{#if entry.title_link}}
-    <li><a href={{entry.title_link}}>{{entry.title}}</a> - {{entry.subtext}}</li>
+  {{#each model.resource as |resource|}}
+    {{#if resource.title_link}}
+    <li><a href={{resource.title_link}}>{{resource.title}}</a> - {{resource.subtext}}</li>
     {{else}}
-    <li>{{entry.title}} - {{entry.subtext}}</li>
+    <li>{{resource.title}} - {{resource.subtext}}</li>
     {{/if}}
   {{/each}}
 </ul>
