@@ -1,7 +1,24 @@
 <h3>Sermon Archive</h3>
 <p>{{#link-to "worship"}}Click Here{{/link-to}} to see our current series</p>
 <table class="table">
-  <td><a href="#">link to dropbox</a></td>
-  <td>Sermon Title</td>
-  <td><a href="#">Scripture</a></td>
+  <thead>
+    <tr>
+      <th>Dropbox Link</th>
+      <th>Sermon Title</th>
+      <th>Scripture</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model.pastsermonarchive as |sermon|}}
+    <tr>
+      <td><a href={{sermon.title_link}}>{{sermon.title}}</a></td>
+      <td>{{sermon.series_title}}</td>
+      {{#if sermon.scripture_link}}
+        <td><a href={{sermon.scripture_link}}>{{sermon.scripture}}</a></td>
+      {{else}}
+        <td>{{sermon.scripture}}</td>
+      {{/if}}
+    </tr>
+    {{/each}}
+  </tbody>
 </table>

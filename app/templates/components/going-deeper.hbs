@@ -1,4 +1,34 @@
 <h3>Going Deeper</h3>
 <p>These questions and actions are designed to help you find ways to take Sunday's Scripture out into the world as the hands and feet of Christ</p>
 <h4>Making You Think</h4>
-<p>Quesitons?</p>
+<ul>
+  {{#each model.goingdeeper as |question|}}
+    <li>{{question.question}}</li>
+  {{/each}}
+</ul>
+
+<h4>Memory Verse</h4>
+<ul>
+  {{#each model.memoryverse as |verse|}}
+    <li>
+      "{{verse.message}}" -
+      {{#if verse.verse_link}}
+        <span><a href={{verse.verse_link}}>{{verse.verse}}</a></span>
+      {{else}}
+        <span>{{verse.verse}}</span>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>
+
+<h4>In The Word</h4>
+
+<ul>
+  {{#each model.weeklyscripture as |verse|}}
+    {{#if verse.verse_link}}
+      <li><a href={{verse.verse_link}}>{{verse.verse}}</a></li>
+    {{else}}
+      <li>{{verse.verse}}</li>
+    {{/if}}
+  {{/each}}
+</ul>

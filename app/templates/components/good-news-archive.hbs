@@ -1,6 +1,19 @@
 <h3>Good News Archive</h3>
-{{#each model.goodnewsarchive as |entry|}}
-<p><a href={{entry.link}}>{{entry.title}}</a></p>
-{{/each}}
+
+<ul>
+  {{#each model.goodnewsarchive as |entry|}}
+  <li><a href={{entry.link}}>{{entry.title}}</a></li>
+  {{/each}}
+</ul>
+
 <h3>Resources</h3>
-<p><a href="#">link</a> - description</p>
+
+<ul>
+  {{#each model.resource as |entry|}}
+    {{#if entry.title_link}}
+    <li><a href={{entry.title_link}}>{{entry.title}}</a> - {{entry.subtext}}</li>
+    {{else}}
+    <li>{{entry.title}} - {{entry.subtext}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
