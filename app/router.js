@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('index', {path: '/'})
   this.route('staff');
-  this.route('worship');
+  this.route('worship', {path: '/worship'});
   this.route('ministries');
   this.route('links');
   this.route('photos');
