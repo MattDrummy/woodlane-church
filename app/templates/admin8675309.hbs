@@ -1,0 +1,5 @@
+<h3>Community Outreach</h3>
+
+{{#each model.communityoutreach as |entry|}}
+<input type="text" name="" value={{entry.name}}>
+<button type="button" name="button" {{action 'deleteRecord' entry.id}}></button>

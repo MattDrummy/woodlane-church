@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('photos');
   this.route('calendar');
   this.route('faq');
+  this.route('admin8675309');
 });
 
 export default Router;
